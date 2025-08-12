@@ -31,9 +31,9 @@ A manual editing mode is included so the user can visually inspect and correct c
 ### Generating Labeled Samples
 Once classification is finalized, the application generates sample image patches for the 'burned' class.
 
-Patch size, output location, and sample counts are controlled via the patch parameters.
+Patch size, augmentation option, output location, and sample counts are controlled via the patch parameters.
 
-Patches are saved as .tif images, each labeled according to its class.
+Patches are saved as .tif images.
 
 ## Installation
 
