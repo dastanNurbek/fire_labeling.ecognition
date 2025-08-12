@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Analysis product="Developer" name="" author="" company="" engine-version="10.4.0" read-only="0" Action-Library-GUID="121B3D68-6B18-11F0-A381-A85E45C4CBC5" Action-library-Version="1.">
+	<Description></Description>
+	<eCog.Proc UserName="Dastan" Company="" Copyright="" version="20181002" use-reproducable-poly="1" project-unit="5" engine-version="10.4.0" engine-build="5014" update-topology="0" distance_calculation="CG" resampling_compatibility="0">
+		<ruleset-info>
+			<name></name>
+			<author>Dastan</author>
+			<tags></tags>
+			<version></version>
+			<description></description>
+			<input></input>
+			<output></output>
+		</ruleset-info>
+		<ParamValueSetCntnr>
+			<ParamValueSet Name="my_params">
+				<ParamValue name="red_layer" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 4" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="red_layer"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="nir_layer" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 8" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="nir_layer"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="swir_layer" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 11" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="swir_layer"></DValue>
+					</Variable>
+				</ParamValue>
+			</ParamValueSet>
+			<ParamValueSet Name="patch_params">
+				<ParamValue name="sample_num" description="" type="variable">
+					<DValue value="50" type="string"></DValue>
+					<Variable>
+						<DValue value="3" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="patch_size" description="" type="variable">
+					<DValue value="248" type="string"></DValue>
+					<Variable>
+						<DValue value="4" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_0" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 4" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_0"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_1" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 3" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_1"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_2" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 2" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_2"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_3" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_3"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_4" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_4"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_5" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_5"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_6" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_6"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_7" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_7"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_8" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_8"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="output_var" description="" type="variable">
+					<DValue value="C:\Users\Dastan\Downloads\Test" type="string"></DValue>
+					<Variable>
+						<DValue value="6" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="augment_var" description="" type="variable">
+					<DValue value="0." type="double"></DValue>
+					<Variable>
+						<DValue value="7" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="augment_mtp" description="" type="variable">
+					<DValue value="4" type="string"></DValue>
+					<Variable>
+						<DValue value="8" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_9" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_9"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_10" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_10"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_11" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_11"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_12" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_12"></DValue>
+					</Variable>
+				</ParamValue>
+			</ParamValueSet>
+			<ParamValueSet Name="classification_params">
+				<ParamValue name="nbr_thres" description="" type="variable">
+					<DValue value="-0.15000000000000002220446049250313080847" type="double"></DValue>
+					<Variable>
+						<DValue value="0" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="ndvi_thres" description="" type="variable">
+					<DValue value="0.16999999999999992894572642398998141289" type="double"></DValue>
+					<Variable>
+						<DValue value="1" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+			</ParamValueSet>
+			<ParamValueSet Name="import_params"></ParamValueSet>
+		</ParamValueSetCntnr>
+		<ObjectDependencies>
+			<ImgLayers>
+				<ChnlProxyCntnr>
+					<Layers>
+						<ChnlProxy strName="Layer 1" flags="4">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="Layer 2" flags="4">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="Layer 3" flags="4">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="Layer 4" flags="4">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="Layer 8" flags="4">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="NDVI" flags="12">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="NBR" flags="12">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="Layer 11" flags="12">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+					</Layers>
+					<Variables>
+						<ChnlProxy strName="red_layer" flags="5">
+							<DValue type="img_chnl" value="Layer 4" scope=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="nir_layer" flags="5">
+							<DValue type="img_chnl" value="Layer 8" scope=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="swir_layer" flags="5">
+							<DValue type="img_chnl" value="Layer 11" scope=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="var_lyr" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_0" flags="5">
+							<DValue type="img_chnl" value="Layer 4" scope=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_1" flags="5">
+							<DValue type="img_chnl" value="Layer 3" scope=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_2" flags="5">
+							<DValue type="img_chnl" value="Layer 2" scope=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_3" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_4" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_5" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_6" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_7" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_8" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_10" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_9" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_11" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+						<ChnlProxy strName="lyr_12" flags="5">
+							<DValue type="img_chnl" value=""></DValue>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</ChnlProxy>
+					</Variables>
+				</ChnlProxyCntnr>
+			</ImgLayers>
+			<ThmLayers>
+				<ChnlProxyCntnr>
+					<Layers></Layers>
+					<Variables></Variables>
+				</ChnlProxyCntnr>
+			</ThmLayers>
+			<MapLvlProxyCntnr>
+				<MapLvlProxies></MapLvlProxies>
+				<MapLvlVrblValues></MapLvlVrblValues>
+			</MapLvlProxyCntnr>
+			<ProcVrblCntnr>
+				<ProcVrbl iId="2" eType="1">
+					<DValue value="0." type="double"></DValue>
+					<NameExpr strTextExpr="show_done"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="3" eType="1">
+					<DValue value="50." type="double"></DValue>
+					<NameExpr strTextExpr="sample_num"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="4" eType="1">
+					<DValue value="248." type="double"></DValue>
+					<NameExpr strTextExpr="patch_size"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="1" eType="1">
+					<DValue value="0.16999999999999992894572642398998141289" type="double"></DValue>
+					<NameExpr strTextExpr="ndvi_thres"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="0" eType="1">
+					<DValue value="-0.15000000000000002220446049250313080847" type="double"></DValue>
+					<NameExpr strTextExpr="nbr_thres"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="6" eType="1">
+					<DValue value="C:\Users\Dastan\Downloads\Test" type="string"></DValue>
+					<NameExpr strTextExpr="output_var"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="7" eType="1">
+					<DValue value="0." type="double"></DValue>
+					<NameExpr strTextExpr="augment_var"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+				<ProcVrbl iId="8" eType="1">
+					<DValue value="4." type="double"></DValue>
+					<NameExpr strTextExpr="augment_mtp"></NameExpr>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</ProcVrbl>
+			</ProcVrblCntnr>
+			<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000000555111512312578270212" NNSlope="0.20000000000000001110223024625156540424" RdiResamplOptns="3">
+				<AllClss>
+					<Clss id="1" name="burned" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Dastan" tChngTime="1753642925" bShow="0" Trans="0.">
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Color R="128" G="128" B="0"></Color>
+						<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+					</Clss>
+					<Clss id="2" name="unburned" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="Dastan" tChngTime="1753626033" bShow="0" Trans="0.">
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Color R="0" G="255" B="0"></Color>
+						<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+					</Clss>
+				</AllClss>
+				<PropTree version="20100426">
+					<AllProps>
+						<PropDscr Flag="65538" strUserName="Dastan" tChngTime="1753618037" group_id="ext.geom.object.prop">
+							<PropDscrId GUID="AF0D7167-ADE8-4240-AAA4-AC2C188E9AF5" InstID="Number of pixels"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params></Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753879806" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_11"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_11" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753879686" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_10"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_10" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753879679" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_9"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_9" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797112" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_7"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_7" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797106" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_6"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_6" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797101" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_5"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_5" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797096" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_4"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_4" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797091" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_3"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_3" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797087" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_2"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_2" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797081" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_1"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_1" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797072" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_0"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_0" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753797062" group_id="exstimgchnl.img.map.prop">
+							<PropDscrId GUID="8B6C2A21-728B-4088-8EDB-1D7314EAA2CB" InstID="Existence of image layer lyr_8"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="lyr_8" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2" strUserName="Dastan" tChngTime="1753627337" group_id="num.nghb.objrel.object.prop">
+							<PropDscrId GUID="7D1F1A4B-9BFD-4b29-BA08-AA370D63669B" InstID="Number of bruned (100)"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="1" type="clssId" name="valClss"></DValue>
+								<DValue value="100" type="int" name="iDist"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753716324" group_id="global.object.vrbl.vrbl_arr.prop">
+							<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="augment_mtp"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="_augment_mtp" type="string" name="NameExpr"></DValue>
+								<DValue value="4." type="double" name="vVal"></DValue>
+								<DValue value="0" type="bool" name="bShared"></DValue>
+								<DValue value="" type="string" name="strInstGUID"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753716067" group_id="global.object.vrbl.vrbl_arr.prop">
+							<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="augment_var"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="_augment_var" type="string" name="NameExpr"></DValue>
+								<DValue value="0." type="double" name="vVal"></DValue>
+								<DValue value="0" type="bool" name="bShared"></DValue>
+								<DValue value="" type="string" name="strInstGUID"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753716013" group_id="global.object.vrbl.vrbl_arr.prop">
+							<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="output_var"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="_output_var" type="string" name="NameExpr"></DValue>
+								<DValue value="C:\Users\Dastan\Downloads\Test" type="string" name="vVal"></DValue>
+								<DValue value="0" type="bool" name="bShared"></DValue>
+								<DValue value="" type="string" name="strInstGUID"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753709925" group_id="global.object.vrbl.vrbl_arr.prop">
+							<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="patch_size"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="_patch_size" type="string" name="NameExpr"></DValue>
+								<DValue value="248." type="double" name="vVal"></DValue>
+								<DValue value="0" type="bool" name="bShared"></DValue>
+								<DValue value="" type="string" name="strInstGUID"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753709780" group_id="global.object.vrbl.vrbl_arr.prop">
+							<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="sample_num"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="_sample_num" type="string" name="NameExpr"></DValue>
+								<DValue value="50." type="double" name="vVal"></DValue>
+								<DValue value="0" type="bool" name="bShared"></DValue>
+								<DValue value="" type="string" name="strInstGUID"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2147483650" strUserName="Dastan" tChngTime="1753708029" group_id="global.object.vrbl.vrbl_arr.prop">
+							<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="show_done"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue value="_show_done" type="string" name="NameExpr"></DValue>
+								<DValue value="0." type="double" name="vVal"></DValue>
+								<DValue value="0" type="bool" name="bShared"></DValue>
+								<DValue value="" type="string" name="strInstGUID"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2" strUserName="Dastan" tChngTime="1753627179" group_id="dist.nghb.objrel.object.prop">
+							<PropDscrId GUID="5E38EFCC-6A01-4e77-B451-3F5B03E63B98" InstID="Distance to bruned"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+							<Params>
+								<DValue value="1" type="clssId" name="valClss"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2" strUserName="Dastan" tChngTime="1753878358" group_id="mean.chnl.object.prop">
+							<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 1"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="Layer 1" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2" strUserName="Dastan" tChngTime="1753799238" group_id="mean.chnl.object.prop">
+							<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean NBR"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="NBR" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+						<PropDscr Flag="2" strUserName="Dastan" tChngTime="1753626602" group_id="mean.chnl.object.prop">
+							<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean NDVI"></PropDscrId>
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<Params>
+								<DValue type="img_chnl" value="NDVI" scope="" name="valChnl"></DValue>
+							</Params>
+						</PropDscr>
+					</AllProps>
+					<UserGroups></UserGroups>
+				</PropTree>
+				<Brightness>
+					<Map MapName="main">
+						<ChnlWghtBrght>
+							<BrghtWght val="1." chnl="0"></BrghtWght>
+							<BrghtWght val="1." chnl="1"></BrghtWght>
+							<BrghtWght val="1." chnl="2"></BrghtWght>
+							<BrghtWght val="1." chnl="3"></BrghtWght>
+							<BrghtWght val="1." chnl="4"></BrghtWght>
+							<BrghtWght val="1." chnl="5"></BrghtWght>
+							<BrghtWght val="1." chnl="6"></BrghtWght>
+							<BrghtWght val="0." chnl="7"></BrghtWght>
+							<BrghtWght val="0." chnl="8"></BrghtWght>
+							<BrghtWght val="1." chnl="9"></BrghtWght>
+							<BrghtWght val="0." chnl="10"></BrghtWght>
+							<BrghtWght val="0." chnl="11"></BrghtWght>
+							<BrghtWght val="0." chnl="12"></BrghtWght>
+							<BrghtWght val="0." chnl="13"></BrghtWght>
+						</ChnlWghtBrght>
+					</Map>
+				</Brightness>
+				<AllVrblClss></AllVrblClss>
+				<AllSubClss>
+					<Clss Id="1" PrfdGrp="1">
+						<SubClss></SubClss>
+						<SubGrp></SubGrp>
+					</Clss>
+					<Clss Id="2" PrfdGrp="2">
+						<SubClss></SubClss>
+						<SubGrp></SubGrp>
+					</Clss>
+				</AllSubClss>
+				<AllTerm>
+					<Term TermEvalType="0">
+						<TermBase ClssId="1" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+					</Term>
+					<Term TermEvalType="0">
+						<TermBase ClssId="2" flags="0">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+					</Term>
+				</AllTerm>
+			</ClssHrchy>
+			<MapVrblCntnr></MapVrblCntnr>
+			<FtrListVrblCntnr></FtrListVrblCntnr>
+			<CoordVrblCntnr></CoordVrblCntnr>
+			<ROIVrblCntnr></ROIVrblCntnr>
+			<ImgObjListVrblCntnr></ImgObjListVrblCntnr>
+			<ArrayCntnr>
+				<Arrays>
+					<Array>
+						<RlstArray name="export_lyrs" type="image layer" bVrbl="0">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</RlstArray>
+						<RlstArrayData>
+							<DValue type="img_chnl" value="lyr_0" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_1" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_10" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_11" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_12" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_2" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_3" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_4" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_5" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_6" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_7" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_8" scope=""></DValue>
+							<DValue type="img_chnl" value="lyr_9" scope=""></DValue>
+						</RlstArrayData>
+					</Array>
+				</Arrays>
+				<ArrayVrbls></ArrayVrbls>
+			</ArrayCntnr>
+			<Smpls>
+				<AllClss>
+					<SmplList ClssId="1"></SmplList>
+					<SmplList ClssId="2"></SmplList>
+				</AllClss>
+				<AllProp></AllProp>
+			</Smpls>
+		</ObjectDependencies>
+		<CustProcAlgrList></CustProcAlgrList>
+		<ProcessList></ProcessList>
+		<ExportedItems></ExportedItems>
+		<LcnsIds></LcnsIds>
+	</eCog.Proc>
+	<ActionList>
+		<Action action-definition-guid="732EF57E-6B18-11F0-A381-A85E45C4CBC5" action-library-guid="121B3D68-6B18-11F0-A381-A85E45C4CBC5" action-library-version="1." state="2" process-name="" LocalParamSet="0">
+			<ParamValueSet Name="my_params">
+				<ParamValue name="red_layer" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 4" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="red_layer"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="nir_layer" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 8" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="nir_layer"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="swir_layer" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 11" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="swir_layer"></DValue>
+					</Variable>
+				</ParamValue>
+			</ParamValueSet>
+			<additional-dependencies></additional-dependencies>
+		</Action>
+		<Action action-definition-guid="52F6ACA2-6B1B-11F0-A381-A85E45C4CBC5" action-library-guid="121B3D68-6B18-11F0-A381-A85E45C4CBC5" action-library-version="1." state="2" process-name="" LocalParamSet="0">
+			<ParamValueSet Name="classification_params">
+				<ParamValue name="nbr_thres" description="" type="variable">
+					<DValue value="-0.15000000000000002220446049250313080847" type="double"></DValue>
+					<Variable>
+						<DValue value="0" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="ndvi_thres" description="" type="variable">
+					<DValue value="0.16999999999999992894572642398998141289" type="double"></DValue>
+					<Variable>
+						<DValue value="1" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+			</ParamValueSet>
+			<additional-dependencies></additional-dependencies>
+		</Action>
+		<Action action-definition-guid="7F72F6C2-6BB5-11F0-A383-A85E45C4CBC5" action-library-guid="121B3D68-6B18-11F0-A381-A85E45C4CBC5" action-library-version="1." state="2" process-name="" LocalParamSet="0">
+			<ParamValueSet Name="patch_params">
+				<ParamValue name="sample_num" description="" type="variable">
+					<DValue value="50" type="string"></DValue>
+					<Variable>
+						<DValue value="3" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="patch_size" description="" type="variable">
+					<DValue value="248" type="string"></DValue>
+					<Variable>
+						<DValue value="4" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_0" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 4" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_0"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_1" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 3" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_1"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_2" description="" type="variable">
+					<DValue type="img_chnl" value="Layer 2" scope=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_2"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_3" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_3"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_4" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_4"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_5" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_5"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_6" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_6"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_7" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_7"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_8" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_8"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="output_var" description="" type="variable">
+					<DValue value="C:\Users\Dastan\Downloads\Test" type="string"></DValue>
+					<Variable>
+						<DValue value="6" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="augment_var" description="" type="variable">
+					<DValue value="0." type="double"></DValue>
+					<Variable>
+						<DValue value="7" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="augment_mtp" description="" type="variable">
+					<DValue value="4" type="string"></DValue>
+					<Variable>
+						<DValue value="8" type="procVarId"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_9" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_9"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_10" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_10"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_11" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_11"></DValue>
+					</Variable>
+				</ParamValue>
+				<ParamValue name="lyr_12" description="" type="variable">
+					<DValue type="img_chnl" value=""></DValue>
+					<Variable>
+						<DValue type="rlstObjId" obj_type="img_layer" scope="" obj_name="lyr_12"></DValue>
+					</Variable>
+				</ParamValue>
+			</ParamValueSet>
+			<additional-dependencies></additional-dependencies>
+		</Action>
+	</ActionList>
+</Analysis>
