@@ -43,3 +43,42 @@ Patches are saved as .tif images, each labeled according to its class.
 
 ## Example
 
+### Step 1: Creating Indices
+We begin with the original post-fire RGB image:
+
+![RGB](fire_labeling.ecognition/Example/rgb.jpg)  
+*Original post-fire imagery.*
+
+From this, the application generates:
+- **NBR** (Normalized Burn Ratio) — sensitive to burn severity:  
+  ![NBR](fire_labeling.ecognition/Example/nbr.jpg)  
+  *Darker areas indicate higher burn severity.*
+- **NDVI** (Normalized Difference Vegetation Index) — measures vegetation greenness:  
+  ![NDVI](fire_labeling.ecognition/Example/ndvi.jpg)  
+  *Brighter green values indicate healthier vegetation.*
+
+---
+
+### Step 2: Threshold Classification
+The application applies thresholds to classify **burned** vs **unburned** areas:
+
+- **NBR Threshold Result:**  
+  ![NBR Threshold](fire_labeling.ecognition/Example/nbr_threshold.jpg)  
+  *Initial burned/unburned separation based on NBR.*
+
+- **NDVI Threshold Refinement:**  
+  ![NDVI Threshold](fire_labeling.ecognition/Example/ndvi_threshold.jpg)  
+  *Refines classification using NDVI to reduce false positives.*
+
+At this point, the user can manually edit the classification to correct any mistakes before generating patches.
+
+---
+
+### Step 3: Generating Labeled Samples
+After classification:
+- **Burned area patches** (*positive samples*) are created.
+- **Unburned area patches**.
+
+These patches are exported as `.tif` files into the **`Samples/`** folder in your project directory, each labeled according to its class.
+
+---
