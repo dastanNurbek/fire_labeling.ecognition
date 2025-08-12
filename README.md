@@ -46,28 +46,37 @@ Patches are saved as .tif images, each labeled according to its class.
 ### Step 1: Creating Indices
 We begin with the original post-fire RGB image:
 
-![RGB](fire_labeling.ecognition/Example/rgb.jpg)  
-*Original post-fire imagery.*
+<img src="https://github.com/dastanNurbek/fire_labeling.ecognition/blob/main/Example/rgb.jpg" alt="drawing" width="300"/>
 
-From this, the application generates:
-- **NBR** (Normalized Burn Ratio) — sensitive to burn severity:  
-  ![NBR](fire_labeling.ecognition/Example/nbr.jpg)  
+*Original post-fire Sentinel-2 imagery visualized in RGB.*
+
+From this, by selecting the Red, NIR, and SWIR layers, the application generates:
+- **NBR** (Normalized Burn Ratio) — sensitive to burn severity:
+  
+  <img src="https://github.com/dastanNurbek/fire_labeling.ecognition/blob/main/Example/nbr.jpg" alt="drawing" width="300"/>
+  
   *Darker areas indicate higher burn severity.*
-- **NDVI** (Normalized Difference Vegetation Index) — measures vegetation greenness:  
-  ![NDVI](fire_labeling.ecognition/Example/ndvi.jpg)  
+- **NDVI** (Normalized Difference Vegetation Index) — measures vegetation greenness:
+  
+  <img src="https://github.com/dastanNurbek/fire_labeling.ecognition/blob/main/Example/ndvi.jpg" alt="drawing" width="300"/>
+  
   *Brighter green values indicate healthier vegetation.*
 
 ---
 
 ### Step 2: Threshold Classification
-The application applies thresholds to classify **burned** vs **unburned** areas:
+The application applies thresholds to classify **burned** (brown) vs **unburned** (green) areas:
 
-- **NBR Threshold Result:**  
-  ![NBR Threshold](fire_labeling.ecognition/Example/nbr_threshold.jpg)  
+- **NBR Threshold Result:**
+  
+  <img src="https://github.com/dastanNurbek/fire_labeling.ecognition/blob/main/Example/nbr_threshold.jpg" alt="drawing" width="300"/>
+  
   *Initial burned/unburned separation based on NBR.*
 
-- **NDVI Threshold Refinement:**  
-  ![NDVI Threshold](fire_labeling.ecognition/Example/ndvi_threshold.jpg)  
+- **NDVI Threshold Refinement:**
+  
+  <img src="https://github.com/dastanNurbek/fire_labeling.ecognition/blob/main/Example/ndvi_threshold.jpg" alt="drawing" width="300"/>
+  
   *Refines classification using NDVI to reduce false positives.*
 
 At this point, the user can manually edit the classification to correct any mistakes before generating patches.
@@ -79,6 +88,6 @@ After classification:
 - **Burned area patches** (*positive samples*) are created.
 - **Unburned area patches**.
 
-These patches are exported as `.tif` files into the **`Samples/`** folder in your project directory, each labeled according to its class.
+These patches are exported as `.tif` files with given parameters into the **`Samples/`** folder in your project directory, each labeled according to its class.
 
 ---
