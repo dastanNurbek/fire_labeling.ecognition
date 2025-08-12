@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionFile>
+	<ActionDefinition name="Create Indices" id="Create Indices" icon="" state-icon-variable="" filter="A" guid="732EF57E-6B18-11F0-A381-A85E45C4CBC5" use_only_once="1" priority="0" can-remove="1">
+		<RuleSet file=""></RuleSet>
+		<Description>Creates NDVI and NBR layers</Description>
+		<Process name="" parameter_set="my_params"></Process>
+		<Properties>
+			<Group text="Create NDVI and NBR Layers" color="4802118" text_color="13948887">
+				<SelectLayer text="'Red' Layer" left-margin="-1" description="Select the Red layer" dscr="Select the Red layer" variable="red_layer" image-layer="1" use-alias="1" process-sel-change="">
+					<visibility_threshold></visibility_threshold>
+					<enable_threshold></enable_threshold>
+				</SelectLayer>
+				<SelectLayer text="NIR Layer" left-margin="-1" description="Select the Near Infra Red Layer" dscr="Select the Near Infra Red Layer" variable="nir_layer" image-layer="1" use-alias="1" process-sel-change="">
+					<visibility_threshold></visibility_threshold>
+					<enable_threshold></enable_threshold>
+				</SelectLayer>
+				<SelectLayer text="SWIR Layer" left-margin="-1" description="Select the Short-Wave-Infra Red Layer" dscr="Select the Short-Wave-Infra Red Layer" variable="swir_layer" image-layer="1" use-alias="1" process-sel-change="">
+					<visibility_threshold></visibility_threshold>
+					<enable_threshold></enable_threshold>
+				</SelectLayer>
+				<Button text="" left-margin="-1" description="Creates the NDVI and NBR layers" img="" mode="push" button_text="Create Layers" hor_offset="0" width="0">
+					<visibility_threshold></visibility_threshold>
+					<enable_threshold></enable_threshold>
+					<RuleSet file="PatchCreatorRuleSet.dcp"></RuleSet>
+					<Process push="CreateLayers" release=""></Process>
+					<Description>Creates the NDVI and NBR layers</Description>
+				</Button>
+			</Group>
+			<Group text="Description" color="4802118" text_color="13948887">
+				<Description text="text" left-margin="-1" description="Description">
+					<visibility_threshold></visibility_threshold>
+					<enable_threshold></enable_threshold>
+				</Description>
+			</Group>
+			<ObjectDependencies>
+				<ImgLayers>
+					<ChnlProxyCntnr>
+						<Layers></Layers>
+						<Variables>
+							<ChnlProxy strName="red_layer" flags="5">
+								<DValue type="img_chnl" value=""></DValue>
+								<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							</ChnlProxy>
+							<ChnlProxy strName="nir_layer" flags="5">
+								<DValue type="img_chnl" value=""></DValue>
+								<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							</ChnlProxy>
+							<ChnlProxy strName="swir_layer" flags="5">
+								<DValue type="img_chnl" value=""></DValue>
+								<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							</ChnlProxy>
+						</Variables>
+					</ChnlProxyCntnr>
+				</ImgLayers>
+				<ThmLayers>
+					<ChnlProxyCntnr>
+						<Layers></Layers>
+						<Variables></Variables>
+					</ChnlProxyCntnr>
+				</ThmLayers>
+				<MapLvlProxyCntnr>
+					<MapLvlProxies></MapLvlProxies>
+					<MapLvlVrblValues></MapLvlVrblValues>
+				</MapLvlProxyCntnr>
+				<ProcVrblCntnr></ProcVrblCntnr>
+				<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000000555111512312578270212" NNSlope="0.20000000000000001110223024625156540424" RdiResamplOptns="3">
+					<AllClss></AllClss>
+					<PropTree version="20100426">
+						<AllProps></AllProps>
+						<UserGroups></UserGroups>
+					</PropTree>
+					<Brightness>
+						<Map MapName="main">
+							<ChnlWghtBrght>
+								<BrghtWght val="1." chnl="0"></BrghtWght>
+								<BrghtWght val="1." chnl="1"></BrghtWght>
+								<BrghtWght val="1." chnl="2"></BrghtWght>
+								<BrghtWght val="1." chnl="3"></BrghtWght>
+								<BrghtWght val="1." chnl="4"></BrghtWght>
+								<BrghtWght val="1." chnl="5"></BrghtWght>
+								<BrghtWght val="1." chnl="6"></BrghtWght>
+								<BrghtWght val="0." chnl="7"></BrghtWght>
+								<BrghtWght val="0." chnl="8"></BrghtWght>
+								<BrghtWght val="1." chnl="9"></BrghtWght>
+								<BrghtWght val="0." chnl="10"></BrghtWght>
+								<BrghtWght val="0." chnl="11"></BrghtWght>
+								<BrghtWght val="0." chnl="12"></BrghtWght>
+								<BrghtWght val="0." chnl="13"></BrghtWght>
+							</ChnlWghtBrght>
+						</Map>
+					</Brightness>
+					<AllVrblClss></AllVrblClss>
+					<AllSubClss></AllSubClss>
+					<AllTerm></AllTerm>
+				</ClssHrchy>
+				<MapVrblCntnr></MapVrblCntnr>
+				<FtrListVrblCntnr></FtrListVrblCntnr>
+				<CoordVrblCntnr></CoordVrblCntnr>
+				<ROIVrblCntnr></ROIVrblCntnr>
+				<ImgObjListVrblCntnr></ImgObjListVrblCntnr>
+				<ArrayCntnr>
+					<Arrays></Arrays>
+					<ArrayVrbls></ArrayVrbls>
+				</ArrayCntnr>
+			</ObjectDependencies>
+		</Properties>
+		<Dependencies>
+			<ProjectStateRequired>
+				<SceneState></SceneState>
+				<ImgObjState></ImgObjState>
+			</ProjectStateRequired>
+			<ProjectStateAdd>
+				<SceneState></SceneState>
+				<ImgObjState></ImgObjState>
+			</ProjectStateAdd>
+			<ProjectStateRemoved>
+				<SceneState></SceneState>
+				<ImgObjState></ImgObjState>
+			</ProjectStateRemoved>
+			<ProjectStateForbidden>
+				<SceneState></SceneState>
+				<ImgObjState></ImgObjState>
+			</ProjectStateForbidden>
+		</Dependencies>
+	</ActionDefinition>
+</ActionFile>
