@@ -88,6 +88,6 @@ After classification:
 - **Burned area patches** (*positive samples*) are created.
 - **Unburned area patches**.
 
-These patches are exported as `.tif` files with given parameters into the **`Samples/`** folder in your project directory, each labeled according to its class.
+These patches are exported as `.tif` files with given parameters into the **`Samples/`** folder in your project directory.
 
 ---
