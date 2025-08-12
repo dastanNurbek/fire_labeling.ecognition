@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sample-space>
+	<sample-info type="tif" size="64" channels="3" data-type="32 bit float"></sample-info>
+	<class-mapping>
+		<class id="0" count="0">burned</class>
+	</class-mapping>
+</sample-space>
