@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLibrary version="1." guid="121B3D68-6B18-11F0-A381-A85E45C4CBC5" name="PatchCreatorLibrary" author="" company="" read-only="0" default-solution="">
+	<Description></Description>
+	<Properties></Properties>
+	<BackwardCompatibility></BackwardCompatibility>
+	<ActionFilterList>
+		<ActionFilter id="A" red="0" green="0" blue="255" red_shade3D="255" green_shade3D="255" blue_shade3D="255" name="Group A"></ActionFilter>
+		<ActionFilter id="B" red="0" green="255" blue="0" red_shade3D="255" green_shade3D="255" blue_shade3D="255" name="Group B"></ActionFilter>
+		<ActionFilter id="C" red="255" green="0" blue="0" red_shade3D="255" green_shade3D="255" blue_shade3D="255" name="Group C"></ActionFilter>
+	</ActionFilterList>
+	<ActionFileList>
+		<ActionFile file="CreateIndices.xml"></ActionFile>
+		<ActionFile file="ThresholdClassification.xml"></ActionFile>
+		<ActionFile file="GenerateLabeledSamplePatches.xml"></ActionFile>
+	</ActionFileList>
+	<Preload></Preload>
+</ActionLibrary>
