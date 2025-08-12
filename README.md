@@ -35,7 +35,7 @@ Patch size, output location, and sample counts are controlled via the patch para
 
 Patches are saved as .tif images, each labeled according to its class.
 
-## Installion
+## Installation
 
 1. Fork this repository
 2. In eCognition, under ```Architect``` window, choose ```Open Action Library```. Select the ```ActionLibrary``` folder.
